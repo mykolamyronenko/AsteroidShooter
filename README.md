@@ -1,13 +1,13 @@
 # Asteroid Shooter Game
 
 ## Overview
-Asteroid Shooter is a simple 2D game built using Pygame. The player controls a spaceship that can shoot lasers to destroy incoming asteroids. The objective is to survive as long as possible and destroy as many asteroids as you can to increase your score.
+Asteroid Shooter is an engaging 2D game built using Pygame. The player controls a spaceship that can shoot lasers to destroy incoming asteroids. The objective is to survive as long as possible and destroy as many asteroids as possible to increase your score.
+
 
 ## Features
-- Control a spaceship with the mouse.
-- Shoot lasers to destroy asteroids.
-- Score system based on the number of destroyed asteroids.
-- Background music and sound effects.
+- Mouse Controls: Navigate the spaceship using the mouse.
+- Laser Shooting: Shoot lasers to destroy asteroids.
+- Scoring System: Earn points for each destroyed asteroid.
 
 ## Setup
 
@@ -34,23 +34,26 @@ Asteroid Shooter is a simple 2D game built using Pygame. The player controls a s
 3. Ensure the following directory structure:
     ```
     asteroid-shooter/
-    ├── graphics/
-    │   ├── Battleplane.png
-    │   ├── background.png
-    │   ├── laser.png
-    │   ├── asteroid.png
-    │   └── subatomic.ttf
-    ├── sound/
-    │   ├── explosion.wav
-    │   ├── laser.wav
-    │   └── spacemusic.wav
+    ├── assets/
+    │   ├── graphics/
+    │   │   ├── Battleplane.png
+    │   │   ├── background.jpg
+    │   │   ├── laser.png
+    │   │   ├── asteroid.png
+    │   │   └── subatomic.ttf
+    │   └── sound/
+    │       ├── explosion.wav
+    │       ├── laser.wav
+    │       └── spacemusic.wav
     ├── main.py
     ├── ship.py
     ├── laser.py
     ├── asteroid.py
+    ├── alien.py
     ├── score.py
     ├── utils.py
     └── README.md
+
     ```
 
 ## How to Play
@@ -63,7 +66,7 @@ Asteroid Shooter is a simple 2D game built using Pygame. The player controls a s
 
 3. Click the left mouse button to shoot lasers.
 
-4. Destroy meteors to increase your score. The score is displayed at the bottom of the screen.
+4. Destroy asteroids to increase your score. The score is displayed at the top-left corner of the screen.
 
 5. Avoid collisions with meteors. If a meteor hits the spaceship, the game will end.
 
@@ -72,6 +75,7 @@ Asteroid Shooter is a simple 2D game built using Pygame. The player controls a s
 - `ship.py`: Contains the `Ship` class, which handles the spaceship's behavior.
 - `laser.py`: Contains the `Laser` class, which handles the laser's behavior.
 - `asteroid.py`: Contains the `Asteroid` class, which handles the asteroid's behavior.
+- `alien.py`:Contains the `Alien` class, which handles the alien’s behavior.
 - `score.py`: Contains the `Score` class, which handles the scoring system.
 - `utils.py`: Contains utility functions and constants.
 
